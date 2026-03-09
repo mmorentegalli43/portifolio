@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matheus Morente Galli | Designer & Videomaker</title>
-    <meta name="description" content="Designer Gráfico e Videomaker com foco em marketing digital e performance.">
+    <title>Matheus Morente Galli | Especialista em Marketing & Performance</title>
+    <meta name="description" content="Profissional formado em Marketing com atuação em tráfego pago, design estratégico, produção de vídeos e landing pages.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,6 +62,18 @@
             scrollbar-width: none;
         }
         
+        /* Custom Scrollbar para dentro dos cards do modal */
+        .custom-scroll::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scroll::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: rgba(0, 242, 254, 0.5);
+            border-radius: 4px;
+        }
+
         /* Modal Invisível */
         .modal-fechado {
             opacity: 0;
@@ -115,17 +127,13 @@
                     <span class="w-2 h-2 rounded-full bg-neon-cyan animate-pulse"></span> Disponível para Projetos
                 </div>
                 
-                <h1 class="text-5xl md:text-7xl font-display font-black text-white leading-tight mb-2 tracking-tight">
-                    Matheus <br/> Morente Galli
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black text-white leading-tight mb-4 tracking-tight">
+                    Especialista em Marketing Digital <br class="hidden md:block"/> 
+                    <span class="text-gradient">& Performance</span>
                 </h1>
                 
-                <h2 class="text-xl md:text-2xl font-light text-gray-400 mb-4">
-                    Designer Gráfico e Videomaker <br class="hidden md:block"/> 
-                    <span class="text-gradient font-bold">| Marketing Digital</span>
-                </h2>
-                
-                <p class="text-base md:text-lg text-gray-500 mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">
-                    Criação estratégica orientada à performance e conversão. Experiência unindo design criativo, produção audiovisual, tráfego pago e Inteligência Artificial para gerar resultados reais.
+                <p class="text-base md:text-lg text-gray-400 mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">
+                    Profissional formado em Marketing com atuação em tráfego pago, design estratégico, produção de vídeos e desenvolvimento de landing pages em HTML, criando estruturas digitais completas para geração de leads e crescimento de negócios.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
@@ -145,48 +153,113 @@
         </div>
     </header>
 
-    <section id="sobre" class="py-24 bg-dark-800 border-t border-white/5 relative">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row gap-16 items-center">
-                <div class="md:w-1/3">
-                    <h2 class="text-4xl font-display font-black text-white mb-4">Sobre<br/><span class="text-gradient">Mim</span></h2>
-                    <div class="w-16 h-1 bg-neon-cyan mb-6"></div>
-                    <p class="text-gray-400 leading-relaxed mb-6">
-                        Designer Gráfico e Videomaker com formação em Marketing, focado em criação estratégica orientada a performance. Experiência no desenvolvimento de criativos para campanhas digitais, produção audiovisual completa e criação de landing pages em HTML para geração de leads. Atuação integrada com tráfego pago, análise de métricas e utilização de Inteligência Artificial para otimização de processos criativos.
-                    </p>
+    <section class="py-20 bg-dark-800 border-t border-white/5 relative z-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left divide-y md:divide-y-0 md:divide-x divide-white/10">
+                
+                <div class="md:pr-8 py-6 md:py-0">
+                    <div class="text-neon-cyan mb-4 flex justify-center md:justify-start"><i data-lucide="users" class="w-10 h-10"></i></div>
+                    <h3 class="text-3xl lg:text-4xl font-display font-black text-white mb-2">+200 Leads Gerados</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Campanhas de tráfego pago focadas em captação de clientes qualificados.</p>
                 </div>
                 
-                <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div class="glass p-6 rounded-2xl">
-                        <i data-lucide="graduation-cap" class="w-8 h-8 text-neon-cyan mb-4"></i>
-                        <h3 class="text-white font-bold mb-2">Formação & Visão</h3>
-                        <p class="text-sm text-gray-400">Formado em Marketing. Foco em estruturar campanhas online e offline com visão voltada a ROI.</p>
+                <div class="md:px-8 py-6 md:py-0">
+                    <div class="text-neon-blue mb-4 flex justify-center md:justify-start"><i data-lucide="bar-chart-2" class="w-10 h-10"></i></div>
+                    <h3 class="text-3xl lg:text-4xl font-display font-black text-white mb-2">Meta Ads</h3>
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-neon-blue mb-2">Campanhas Estruturadas</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Planejamento, segmentação estratégica e otimização constante baseada em dados.</p>
+                </div>
+                
+                <div class="md:pl-8 py-6 md:py-0">
+                    <div class="text-neon-purple mb-4 flex justify-center md:justify-start"><i data-lucide="layout-template" class="w-10 h-10"></i></div>
+                    <h3 class="text-3xl lg:text-4xl font-display font-black text-white mb-2">HTML / CSS</h3>
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-neon-purple mb-2">Landing Pages</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Páginas desenvolvidas com foco em conversão e experiência do usuário.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-dark-900 border-t border-white/5 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 40px 40px;"></div>
+
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-neon-cyan font-bold text-xs uppercase tracking-widest mb-2 block">Soluções</span>
+                <h2 class="text-3xl md:text-5xl font-display font-black text-white">Minhas <span class="text-gradient">Entregas</span></h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass p-8 rounded-3xl border-t-2 border-t-neon-cyan hover:-translate-y-2 transition-transform">
+                    <div class="bg-neon-cyan/10 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="trending-up" class="w-6 h-6 text-neon-cyan"></i>
                     </div>
-                    <div class="glass p-6 rounded-2xl">
-                        <i data-lucide="video" class="w-8 h-8 text-neon-blue mb-4"></i>
-                        <h3 class="text-white font-bold mb-2">Produção Audiovisual</h3>
-                        <p class="text-sm text-gray-400">Processo completo: elaboração de roteiro, captação de imagens e edição dinâmica.</p>
+                    <h3 class="text-xl font-display font-black text-white mb-3 leading-tight">Marketing Digital <br> e Tráfego Pago</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Planejamento, criação e otimização de campanhas no Meta Ads e outras plataformas, focadas em geração de leads, crescimento de negócios e análise constante de resultados.</p>
+                </div>
+                
+                <div class="glass p-8 rounded-3xl border-t-2 border-t-neon-blue hover:-translate-y-2 transition-transform md:-translate-y-4">
+                    <div class="bg-neon-blue/10 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="image" class="w-6 h-6 text-neon-blue"></i>
                     </div>
-                    <div class="glass p-6 rounded-2xl">
-                        <i data-lucide="layout-template" class="w-8 h-8 text-neon-purple mb-4"></i>
-                        <h3 class="text-white font-bold mb-2">Web & Landing Pages</h3>
-                        <p class="text-sm text-gray-400">Desenvolvimento de Landing Pages em HTML focadas em conversão e velocidade de carregamento.</p>
+                    <h3 class="text-xl font-display font-black text-white mb-3 leading-tight">Design e Produção <br> de Criativos</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Criação de peças visuais, criativos para campanhas e produção de vídeos estratégicos alinhados com a identidade da marca e objetivos de marketing.</p>
+                </div>
+                
+                <div class="glass p-8 rounded-3xl border-t-2 border-t-neon-purple hover:-translate-y-2 transition-transform">
+                    <div class="bg-neon-purple/10 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="mouse-pointer-click" class="w-6 h-6 text-neon-purple"></i>
                     </div>
-                    <div class="glass p-6 rounded-2xl">
-                        <i data-lucide="sparkles" class="w-8 h-8 text-neon-cyan mb-4"></i>
-                        <h3 class="text-white font-bold mb-2">Inteligência Artificial</h3>
-                        <p class="text-sm text-gray-400">Uso de ChatGPT, Gemini, Dreamina e Flow como apoio criativo e otimização de tempo.</p>
-                    </div>
+                    <h3 class="text-xl font-display font-black text-white mb-3 leading-tight">Landing Pages e <br> Estruturas de Conversão</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Desenvolvimento de landing pages em HTML e criação de estruturas digitais pensadas para transformar visitantes em leads e clientes.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-dark-900 relative">
+    <section class="py-24 bg-dark-800 border-t border-white/5 relative">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-neon-blue font-bold text-xs uppercase tracking-widest mb-2 block">Metodologia</span>
+                <h2 class="text-3xl md:text-5xl font-display font-black text-white">Como funciona meu <span class="text-gradient">processo</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-4">
+                
+                <div class="relative p-6 glass rounded-3xl border border-white/5 hover:border-neon-cyan/50 transition-colors group">
+                    <div class="text-6xl font-display font-black text-white/5 absolute right-4 top-4 group-hover:text-white/10 transition-colors">1</div>
+                    <h3 class="text-xl font-bold text-white mb-3 relative z-10 flex items-center gap-2"><i data-lucide="search" class="w-5 h-5 text-neon-cyan"></i> Diagnóstico</h3>
+                    <p class="text-gray-400 text-sm relative z-10">Análise do negócio e definição da estratégia digital.</p>
+                </div>
+
+                <div class="relative p-6 glass rounded-3xl border border-white/5 hover:border-neon-blue/50 transition-colors group">
+                    <div class="text-6xl font-display font-black text-white/5 absolute right-4 top-4 group-hover:text-white/10 transition-colors">2</div>
+                    <h3 class="text-xl font-bold text-white mb-3 relative z-10 flex items-center gap-2"><i data-lucide="map" class="w-5 h-5 text-neon-blue"></i> Planejamento</h3>
+                    <p class="text-gray-400 text-sm relative z-10">Estruturação das campanhas, criativos e páginas necessárias.</p>
+                </div>
+
+                <div class="relative p-6 glass rounded-3xl border border-white/5 hover:border-neon-purple/50 transition-colors group">
+                    <div class="text-6xl font-display font-black text-white/5 absolute right-4 top-4 group-hover:text-white/10 transition-colors">3</div>
+                    <h3 class="text-xl font-bold text-white mb-3 relative z-10 flex items-center gap-2"><i data-lucide="play" class="w-5 h-5 text-neon-purple"></i> Execução</h3>
+                    <p class="text-gray-400 text-sm relative z-10">Implementação das campanhas, criação dos materiais e desenvolvimento das landing pages.</p>
+                </div>
+
+                <div class="relative p-6 glass rounded-3xl border border-white/5 hover:border-white/30 transition-colors group">
+                    <div class="text-6xl font-display font-black text-white/5 absolute right-4 top-4 group-hover:text-white/10 transition-colors">4</div>
+                    <h3 class="text-xl font-bold text-white mb-3 relative z-10 flex items-center gap-2"><i data-lucide="refresh-cw" class="w-5 h-5 text-white"></i> Otimização</h3>
+                    <p class="text-gray-400 text-sm relative z-10">Monitoramento constante de métricas e melhorias contínuas para aumentar resultados.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-dark-900 border-t border-white/5 relative">
         <div class="max-w-7xl mx-auto px-6">
             
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-display font-black text-white mb-4">Projetos em <span class="text-gradient">Destaque</span></h2>
+                <h2 class="text-4xl md:text-5xl font-display font-black text-white mb-4">Projetos de Marketing, <br><span class="text-gradient">Design e Performance</span></h2>
                 <p class="text-gray-500 max-w-2xl mx-auto">Uma amostra do impacto visual e narrativo que trago para as campanhas.</p>
             </div>
 
@@ -196,12 +269,8 @@
                     <div class="aspect-[9/16] relative overflow-hidden bg-dark-700">
                         <img src="img/portifolio-img1.jpg" alt="Design Destaque" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute top-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white border border-white/10 uppercase tracking-widest flex items-center gap-2">
-                            <i data-lucide="pen-tool" class="w-3 h-3 text-neon-cyan"></i> Design
+                            <i data-lucide="pen-tool" class="w-3 h-3 text-neon-cyan"></i> Design & Performance
                         </div>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold text-white mb-2">Campanha de Lançamento</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">Criativos estáticos desenvolvidos para Meta Ads focados em captação de leads. Identidade visual alinhada com alta taxa de CTR (Click-Through Rate).</p>
                     </div>
                 </div>
 
@@ -209,7 +278,7 @@
                     <div class="aspect-[9/16] relative overflow-hidden bg-black">
                         <video src="img/portifolio-video1.mp4" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>
                         <div class="absolute top-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white border border-white/10 uppercase tracking-widest flex items-center gap-2">
-                            <i data-lucide="play-circle" class="w-3 h-3 text-neon-purple"></i> Videomaker
+                            <i data-lucide="play-circle" class="w-3 h-3 text-neon-purple"></i> Videomaker & Tráfego
                         </div>
                         <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
                             <div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform">
@@ -217,82 +286,50 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold text-white mb-2">Varejo de Performance</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">Roteiro, captação e edição. Feito para Meta Ads e Reels, alinhando áudio viral e chamada para ação (CTA) forte.</p>
-                    </div>
                 </div>
 
             </div>
 
             <div class="mt-16 text-center">
                 <button onclick="abrirModal()" class="inline-flex items-center gap-3 bg-white text-dark-900 font-black uppercase tracking-wider px-10 py-5 rounded-full shadow-[0_10px_40px_rgba(255,255,255,0.2)] hover:scale-105 transition-transform">
-                    Veja Mais Projetos <i data-lucide="layout-grid" class="w-5 h-5"></i>
+                    Ver Galeria Completa <i data-lucide="layout-grid" class="w-5 h-5"></i>
                 </button>
             </div>
 
         </div>
     </section>
 
-    <section class="py-24 bg-dark-800 border-y border-white/5 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 40px 40px;"></div>
-
-        <div class="max-w-6xl mx-auto px-6 relative z-10">
-            <h2 class="text-3xl md:text-4xl font-display font-black text-center text-white mb-16">Orientado a <span class="text-gradient">Resultados</span></h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="glass p-8 rounded-3xl text-center border-t-2 border-t-neon-cyan hover:-translate-y-2 transition-transform">
-                    <div class="text-neon-cyan mb-4 flex justify-center"><i data-lucide="trending-up" class="w-10 h-10"></i></div>
-                    <h3 class="text-2xl font-display font-black text-white mb-2">Tráfego Pago</h3>
-                    <p class="text-xs uppercase tracking-widest text-gray-500 font-bold mb-4">& Performance</p>
-                    <p class="text-gray-400 text-sm">Planejamento, criação e otimização de campanhas no Meta Ads, focadas em geração de leads e crescimento de negócios. Análise constante de métricas para melhorar a performance e maximizar resultados.</p>
-                </div>
-                
-                <div class="glass p-8 rounded-3xl text-center border-t-2 border-t-neon-blue hover:-translate-y-2 transition-transform md:-translate-y-6">
-                    <div class="text-neon-blue mb-4 flex justify-center"><i data-lucide="users" class="w-10 h-10"></i></div>
-                    <h3 class="text-2xl font-display font-black text-white mb-2">Geração</h3>
-                    <p class="text-xs uppercase tracking-widest text-gray-500 font-bold mb-4">de Leads</p>
-                    <p class="text-gray-400 text-sm">Estratégias de captação que já geraram mais de 200 leads, utilizando segmentação estratégica e campanhas orientadas à conversão.</p>
-                </div>
-                
-                <div class="glass p-8 rounded-3xl text-center border-t-2 border-t-neon-purple hover:-translate-y-2 transition-transform">
-                    <div class="text-neon-purple mb-4 flex justify-center"><i data-lucide="layout-template" class="w-10 h-10"></i></div>
-                    <h3 class="text-2xl font-display font-black text-white mb-2">Landing Pages</h3>
-                    <p class="text-xs uppercase tracking-widest text-gray-500 font-bold mb-4">& Criativos</p>
-                    <p class="text-gray-400 text-sm">Desenvolvimento de landing pages em HTML e criação de criativos alinhados com a identidade da marca, pensados para aumentar a performance das campanhas.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-24 bg-dark-900 relative">
+    <section class="py-24 bg-dark-800 border-t border-white/5 relative">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-display font-black text-white mb-12">Hard <span class="text-gradient">Skills</span></h2>
+            <h2 class="text-3xl font-display font-black text-white mb-12">Ferramentas <span class="text-gradient">e Tecnologias</span></h2>
             
             <div class="flex flex-wrap justify-center gap-3">
-                <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-neon-cyan hover:text-neon-cyan cursor-default transition-colors">Photoshop & Canva</span>
-                <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-neon-cyan hover:text-neon-cyan cursor-default transition-colors">Premiere & Capcut</span>
-                <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-neon-blue hover:text-neon-blue cursor-default transition-colors">Captação de Áudio e Vídeo</span>
-                <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-neon-blue hover:text-neon-blue cursor-default transition-colors">Meta Ads & Google Ads</span>
-                <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-neon-purple hover:text-neon-purple cursor-default transition-colors">Landing Pages HTML/CSS</span>
-                <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-neon-purple hover:text-neon-purple cursor-default transition-colors">Roteirização</span>
-                <span class="px-5 py-2 border border-neon-cyan/50 bg-neon-cyan/10 rounded-full text-neon-cyan font-bold text-sm cursor-default">Prompts (IA)</span>
-                <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-white cursor-default transition-colors">ChatGPT, Gemini, Dreamina, Flow</span>
+                <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-neon-cyan hover:text-neon-cyan cursor-default transition-colors">Meta Ads</span>
+                <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-neon-cyan hover:text-neon-cyan cursor-default transition-colors">Google Ads</span>
+                <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-neon-blue hover:text-neon-blue cursor-default transition-colors">HTML / CSS</span>
+                <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-neon-blue hover:text-neon-blue cursor-default transition-colors">Design de Criativos</span>
+                <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-neon-purple hover:text-neon-purple cursor-default transition-colors">Edição de Vídeo</span>
+                <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-neon-purple hover:text-neon-purple cursor-default transition-colors">Análise de Métricas de Campanha</span>
+                <span class="px-5 py-2 border border-neon-cyan/50 bg-neon-cyan/10 rounded-full text-neon-cyan font-bold text-sm cursor-default hover:bg-neon-cyan hover:text-dark-900 transition-colors">Inteligência Artificial aplicada ao Marketing</span>
             </div>
         </div>
     </section>
 
-    <footer id="contato" class="bg-dark-800 border-t border-white/10 pt-20 pb-10">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl md:text-6xl font-display font-black text-white mb-6">Vamos escalar o seu <br/><span class="text-gradient">Próximo Projeto?</span></h2>
-            <p class="text-gray-400 mb-10 max-w-xl mx-auto">Seja para criar campanhas do zero, refazer o visual da sua marca ou captar leads qualificados. Estou pronto para o desafio.</p>
+    <footer id="contato" class="bg-dark-900 border-t border-neon-cyan/30 pt-20 pb-10 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom,_rgba(0,242,254,0.1),_transparent_50%)]"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl font-display font-black text-white mb-6">Vamos construir sua <br/><span class="text-gradient">Presença Digital?</span></h2>
+            <p class="text-gray-400 mb-10 max-w-xl mx-auto text-lg leading-relaxed">
+                Se você busca estratégias de marketing digital para atrair mais clientes e fortalecer sua marca, entre em contato para conversarmos sobre seu projeto.
+            </p>
             
             <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
-                <a href="https://wa.me/5544991610305" target="_blank" class="bg-[#25D366] text-white font-bold uppercase tracking-widest px-8 py-4 rounded-full hover:bg-[#1ebd59] transition-colors flex items-center justify-center gap-3">
-                    <i data-lucide="message-circle" class="w-5 h-5"></i> Chamar no WhatsApp
+                <a href="https://wa.me/5544991610305" target="_blank" class="bg-[#25D366] text-white font-bold uppercase tracking-widest px-8 py-4 rounded-full hover:bg-[#1ebd59] transition-transform hover:scale-105 flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(37,211,102,0.3)]">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> Falar no WhatsApp
                 </a>
                 <a href="mailto:mideaz.creative@gmail.com" class="glass text-white font-bold uppercase tracking-widest px-8 py-4 rounded-full hover:bg-white/10 transition-colors flex items-center justify-center gap-3">
-                    <i data-lucide="mail" class="w-5 h-5"></i> Enviar E-mail
+                    <i data-lucide="mail" class="w-5 h-5"></i> Entrar em Contato
                 </a>
             </div>
 
@@ -305,89 +342,149 @@
         </div>
     </footer>
 
-
-    <div id="modal-portfolio" class="fixed inset-0 z-[10000] flex items-center justify-center p-4 modal-fechado transition-all duration-300">
+    <div id="modal-portfolio" class="fixed inset-0 z-[10000] flex items-center justify-center p-4 md:p-10 modal-fechado transition-all duration-300">
         
-        <div class="absolute inset-0 bg-dark-900/90 backdrop-blur-md" onclick="fecharModal()"></div>
+        <div class="absolute inset-0 bg-dark-900/95 backdrop-blur-md" onclick="fecharModal()"></div>
 
-        <div class="relative bg-dark-800 rounded-3xl w-full max-w-4xl shadow-2xl overflow-hidden border border-white/10 scale-95 transition-transform duration-300" id="modal-content">
+        <div class="relative bg-dark-900 rounded-3xl w-full max-w-7xl shadow-2xl overflow-hidden border border-white/10 scale-95 transition-transform duration-300 flex flex-col h-[90vh]" id="modal-content">
             
-            <div class="p-5 flex justify-between items-center border-b border-white/5 bg-dark-900/50">
+            <div class="p-5 flex justify-between items-center border-b border-white/5 bg-dark-800 shrink-0">
                 <div>
                     <span class="text-neon-cyan font-bold text-xs uppercase tracking-widest">Galeria Completa</span>
-                    <h3 class="text-white font-display font-black text-xl">Meus Trabalhos</h3>
+                    <h3 class="text-white font-display font-black text-xl">Projetos de Marketing, Design e Performance</h3>
                 </div>
                 <button onclick="fecharModal()" class="bg-white/5 hover:bg-white/10 text-white rounded-full p-2 transition-colors border border-white/10">
                     <i data-lucide="x" class="w-5 h-5"></i>
                 </button>
             </div>
 
-            <div id="carrossel-projetos" class="flex overflow-x-auto gap-4 p-6 snap-x snap-mandatory scrollbar-hide cursor-grab active:cursor-grabbing" style="scroll-behavior: smooth;">
+            <div id="carrossel-projetos" class="flex overflow-x-auto gap-6 p-6 snap-x snap-mandatory scrollbar-hide cursor-grab active:cursor-grabbing flex-1 items-start" style="scroll-behavior: smooth;">
                 
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-black select-none">
-                    <video src="img/portifolio-video1.mp4" class="absolute inset-0 w-full h-full object-cover" controls playsinline></video>
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-black select-none">
-                    <video src="img/portifolio-video2.mp4" class="absolute inset-0 w-full h-full object-cover" controls playsinline></video>
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-black select-none">
-                    <video src="img/portifolio-video3.mp4" class="absolute inset-0 w-full h-full object-cover" controls playsinline></video>
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-black select-none">
-                    <video src="img/portifolio-video4.mp4" class="absolute inset-0 w-full h-full object-cover" controls playsinline></video>
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-black select-none">
-                    <video src="img/portifolio-video5.mp4" class="absolute inset-0 w-full h-full object-cover" controls playsinline></video>
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-black select-none">
-                    <video src="img/portifolio-video9.mp4" class="absolute inset-0 w-full h-full object-cover" controls playsinline></video>
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-black select-none">
-                    <video src="img/portifolio-video11.mp4" class="absolute inset-0 w-full h-full object-cover" controls playsinline></video>
+                <div class="flex-none w-[85vw] md:w-[400px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col h-full max-h-[800px] select-none">
+                    <div class="h-64 relative bg-black shrink-0">
+                        <video src="img/portifolio-video1.mp4" class="absolute inset-0 w-full h-full object-cover" controls playsinline></video>
+                    </div>
+                    <div class="p-6 overflow-y-auto custom-scroll flex-1 flex flex-col">
+                        <h4 class="text-white font-bold text-xl mb-1">Campanha de Alta Conversão</h4>
+                        <p class="text-gray-400 text-sm mb-4">Desenvolvimento de comunicação persuasiva para o mercado local.</p>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div>
+                                <h5 class="text-neon-cyan font-black text-xs uppercase mb-1 flex items-center gap-1"><i data-lucide="target" class="w-3 h-3"></i> Objetivo</h5>
+                                <p class="text-gray-300 text-sm">Criação de criativo em vídeo para campanha de captação de leads e aumento de agendamentos.</p>
+                            </div>
+                            <div>
+                                <h5 class="text-neon-blue font-black text-xs uppercase mb-1 flex items-center gap-1"><i data-lucide="check-square" class="w-3 h-3"></i> O que foi feito</h5>
+                                <ul class="text-gray-300 text-sm list-disc pl-4 marker:text-neon-blue space-y-1">
+                                    <li>Criação de vídeo dinâmico</li>
+                                    <li>Estruturação de campanha de tráfego pago</li>
+                                    <li>Definição de comunicação visual e script</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="text-neon-purple font-black text-xs uppercase mb-1 flex items-center gap-1"><i data-lucide="trending-up" class="w-3 h-3"></i> Resultado</h5>
+                                <p class="text-gray-300 text-sm">Melhoria na performance da campanha, com redução no custo por lead (CPL) e aumento no número de agendamentos reais.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
+                            <span class="text-[10px] uppercase font-bold px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-300">Tráfego Pago</span>
+                            <span class="text-[10px] uppercase font-bold px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-300">Vídeo</span>
+                            <span class="text-[10px] uppercase font-bold px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-300">Meta Ads</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-dark-700 select-none">
-                    <img src="img/portifolio-img1.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-dark-700 select-none">
-                    <img src="img/portifolio-img2.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-dark-700 select-none">
-                    <img src="img/portifolio-img6.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-dark-700 select-none">
-                    <img src="img/portifolio-img7.jpeg" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-dark-700 select-none">
-                    <img src="img/portifolio-img8.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-dark-700 select-none">
-                    <img src="img/portifolio-img9.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-dark-700 select-none">
-                    <img src="img/portifolio-img10.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-dark-700 select-none">
-                    <img src="img/portifolio-img11.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-dark-700 select-none">
-                    <img src="img/portifolio-img20.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-dark-700 select-none">
-                    <img src="img/portifolio-img21.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-dark-700 select-none">
-                    <img src="img/portifolio-img23.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-                </div>
-                <div class="flex-none w-72 md:w-80 h-[450px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 relative bg-dark-700 select-none">
-                    <img src="img/portifolio-img24.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
+                <div class="flex-none w-[85vw] md:w-[400px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col h-full max-h-[800px] select-none">
+                    <div class="h-64 relative bg-dark-700 shrink-0">
+                        <img src="img/portifolio-img1.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
+                    </div>
+                    <div class="p-6 overflow-y-auto custom-scroll flex-1 flex flex-col">
+                        <h4 class="text-white font-bold text-xl mb-1">Identidade e Tráfego</h4>
+                        <p class="text-gray-400 text-sm mb-4">Design focado em cliques e retenção de atenção no feed.</p>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div>
+                                <h5 class="text-neon-cyan font-black text-xs uppercase mb-1 flex items-center gap-1"><i data-lucide="target" class="w-3 h-3"></i> Objetivo</h5>
+                                <p class="text-gray-300 text-sm">Criação de criativo estático impactante para atrair público-alvo qualificado.</p>
+                            </div>
+                            <div>
+                                <h5 class="text-neon-blue font-black text-xs uppercase mb-1 flex items-center gap-1"><i data-lucide="check-square" class="w-3 h-3"></i> O que foi feito</h5>
+                                <ul class="text-gray-300 text-sm list-disc pl-4 marker:text-neon-blue space-y-1">
+                                    <li>Design estratégico de criativo</li>
+                                    <li>Planejamento de campanha no Meta Ads</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="text-neon-purple font-black text-xs uppercase mb-1 flex items-center gap-1"><i data-lucide="trending-up" class="w-3 h-3"></i> Resultado</h5>
+                                <p class="text-gray-300 text-sm">Geração de dezenas de leads na primeira semana de veiculação com alto CTR.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
+                            <span class="text-[10px] uppercase font-bold px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-300">Design</span>
+                            <span class="text-[10px] uppercase font-bold px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-300">Marketing Digital</span>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="flex-none w-[85vw] md:w-[400px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col h-full max-h-[800px] select-none">
+                    <div class="h-64 relative bg-black shrink-0"><video src="img/portifolio-video2.mp4" class="absolute inset-0 w-full h-full object-cover" controls playsinline></video></div>
+                    <div class="p-6 overflow-y-auto custom-scroll flex-1 flex flex-col">
+                        <h4 class="text-white font-bold text-xl mb-1">Vídeo Institucional</h4>
+                        <div class="space-y-4 mb-6 mt-4">
+                            <div><h5 class="text-neon-cyan font-black text-xs uppercase mb-1">Objetivo</h5><p class="text-gray-300 text-sm">Aumentar a autoridade da marca.</p></div>
+                            <div><h5 class="text-neon-blue font-black text-xs uppercase mb-1">O que foi feito</h5><ul class="text-gray-300 text-sm list-disc pl-4 marker:text-neon-blue space-y-1"><li>Roteiro, captação e edição</li></ul></div>
+                            <div><h5 class="text-neon-purple font-black text-xs uppercase mb-1">Resultado</h5><p class="text-gray-300 text-sm">Melhoria no engajamento nas redes sociais.</p></div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5"><span class="text-[10px] uppercase font-bold px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-300">Vídeo</span></div>
+                    </div>
+                </div>
+
+                <div class="flex-none w-[85vw] md:w-[400px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col h-full max-h-[800px] select-none">
+                    <div class="h-64 relative bg-dark-700 shrink-0"><img src="img/portifolio-img2.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none"></div>
+                    <div class="p-6 overflow-y-auto custom-scroll flex-1 flex flex-col">
+                        <h4 class="text-white font-bold text-xl mb-1">Criação de Landing Page</h4>
+                        <div class="space-y-4 mb-6 mt-4">
+                            <div><h5 class="text-neon-cyan font-black text-xs uppercase mb-1">Objetivo</h5><p class="text-gray-300 text-sm">Captação de leads em página de alta conversão.</p></div>
+                            <div><h5 class="text-neon-blue font-black text-xs uppercase mb-1">O que foi feito</h5><ul class="text-gray-300 text-sm list-disc pl-4 marker:text-neon-blue space-y-1"><li>Desenvolvimento de landing page em HTML</li><li>Design voltado a UX/UI</li></ul></div>
+                            <div><h5 class="text-neon-purple font-black text-xs uppercase mb-1">Resultado</h5><p class="text-gray-300 text-sm">Aumento direto na taxa de conversão.</p></div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5"><span class="text-[10px] uppercase font-bold px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-300">Landing Page</span><span class="text-[10px] uppercase font-bold px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-300">Design</span></div>
+                    </div>
+                </div>
+
+                <div class="flex-none w-[85vw] md:w-[400px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col h-full max-h-[800px] select-none">
+                    <div class="h-64 relative bg-black shrink-0"><video src="img/portifolio-video3.mp4" class="absolute inset-0 w-full h-full object-cover" controls playsinline></video></div>
+                    <div class="p-6 overflow-y-auto custom-scroll flex-1 flex flex-col">
+                        <h4 class="text-white font-bold text-xl mb-1">Vídeo de Vendas (VSL)</h4>
+                        <div class="space-y-4 mb-6 mt-4">
+                            <div><h5 class="text-neon-cyan font-black text-xs uppercase mb-1">Objetivo</h5><p class="text-gray-300 text-sm">Aquecimento de público e conversão em vendas.</p></div>
+                            <div><h5 class="text-neon-blue font-black text-xs uppercase mb-1">O que foi feito</h5><ul class="text-gray-300 text-sm list-disc pl-4 marker:text-neon-blue space-y-1"><li>Edição de vídeo dinâmica com IA</li></ul></div>
+                            <div><h5 class="text-neon-purple font-black text-xs uppercase mb-1">Resultado</h5><p class="text-gray-300 text-sm">Aumento na retenção do espectador e mais vendas.</p></div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5"><span class="text-[10px] uppercase font-bold px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-300">Vídeo</span><span class="text-[10px] uppercase font-bold px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-300">Marketing Digital</span></div>
+                    </div>
+                </div>
+
+                <div class="flex-none w-[85vw] md:w-[400px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col h-full max-h-[800px] select-none">
+                    <div class="h-64 relative bg-dark-700 shrink-0"><img src="img/portifolio-img6.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none"></div>
+                    <div class="p-6 overflow-y-auto custom-scroll flex-1 flex flex-col">
+                        <h4 class="text-white font-bold text-xl mb-1">Estratégia de Captação</h4>
+                        <div class="space-y-4 mb-6 mt-4">
+                            <div><h5 class="text-neon-cyan font-black text-xs uppercase mb-1">Objetivo</h5><p class="text-gray-300 text-sm">Geração de demanda qualificada.</p></div>
+                            <div><h5 class="text-neon-blue font-black text-xs uppercase mb-1">O que foi feito</h5><ul class="text-gray-300 text-sm list-disc pl-4 marker:text-neon-blue space-y-1"><li>Criação de design focado em dor/desejo</li><li>Estruturação de campanha Google Ads / Meta Ads</li></ul></div>
+                            <div><h5 class="text-neon-purple font-black text-xs uppercase mb-1">Resultado</h5><p class="text-gray-300 text-sm">Caixa de entrada lotada de leads qualificados.</p></div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5"><span class="text-[10px] uppercase font-bold px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-300">Tráfego Pago</span><span class="text-[10px] uppercase font-bold px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-300">Design</span></div>
+                    </div>
+                </div>
+                
             </div>
 
-            <div class="p-4 bg-dark-900/50 border-t border-white/5 text-center flex items-center justify-between px-6">
+            <div class="p-4 bg-dark-800 border-t border-white/5 text-center flex items-center justify-between px-6 shrink-0">
                 <p class="text-gray-500 text-xs font-medium flex items-center gap-2">
-                    <i data-lucide="mouse" class="w-4 h-4"></i> Clique e arraste
+                    <i data-lucide="mouse" class="w-4 h-4"></i> Clique e arraste para o lado
                 </p>
                 <a href="#contato" onclick="fecharModal()" class="text-neon-cyan hover:text-white text-sm font-bold uppercase tracking-wider transition-colors">
                     Solicitar Orçamento
