@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matheus Morente Galli | Especialista em Marketing & Performance</title>
+    <title>Matheus Morente Galli | Marketing Digital & Tráfego Pago</title>
     <meta name="description" content="Profissional formado em Marketing com atuação em tráfego pago, design estratégico, produção de vídeos e landing pages.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,17 +22,15 @@
                         display: ['Montserrat', 'sans-serif'],
                     },
                     colors: {
-                        // NOVA PALETA DE CORES DA LOGO (IMAGE_8.PNG)
                         dark: {
-                            900: '#0A111A', // Preto derivado do texto da logo
-                            800: '#1A252E', // Fundo de cards derivado
-                            700: '#23323F', // Fundos secundários
+                            900: '#0A111A',
+                            800: '#1A252E',
+                            700: '#23323F',
                         },
                         logo: {
-                            cyan: '#104E59',   // Cyan escuro da logo
-                            blue: '#1D1C4C'    // Azul escuro/roxo da logo
+                            cyan: '#104E59',
+                            blue: '#1D1C4C'
                         },
-                        // Neons originais para texto de acento (mantendo leitura)
                         neon: {
                             cyan: '#00f2fe',
                             blue: '#4facfe',
@@ -59,7 +57,6 @@
     </script>
 
     <style>
-        /* Estilização da barra de rolagem do modal horizontal */
         .scrollbar-hide::-webkit-scrollbar {
             display: none;
         }
@@ -68,7 +65,6 @@
             scrollbar-width: none;
         }
         
-        /* Custom Scrollbar para dentro dos cards do modal */
         .custom-scroll::-webkit-scrollbar {
             width: 4px;
         }
@@ -76,26 +72,23 @@
             background: rgba(255, 255, 255, 0.05);
         }
         .custom-scroll::-webkit-scrollbar-thumb {
-            background: rgba(16, 78, 89, 0.5); // Cyan logo
+            background: rgba(16, 78, 89, 0.5);
             border-radius: 4px;
         }
 
-        /* Modal Invisível */
         .modal-fechado {
             opacity: 0;
             pointer-events: none;
             z-index: -1 !important;
         }
 
-        /* Efeito de Vidro (Glassmorphism) */
         .glass {
-            background: rgba(10, 17, 26, 0.7); // Dark logo
+            background: rgba(10, 17, 26, 0.7);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        // Degradê de texto neon original (mantendo brilho)
         .text-gradient {
             background: linear-gradient(to right, #00f2fe, #4facfe);
             -webkit-background-clip: text;
@@ -117,13 +110,11 @@
     </nav>
 
     <header class="relative min-h-[100dvh] flex items-center justify-center overflow-hidden pt-20">
-        // Mudar o brilho de fundo para a cor da logo
         <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_right,_rgba(16,78,89,0.05),_transparent_40%)]"></div>
         
         <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
             
             <div class="order-2 md:order-1 flex justify-center md:justify-end relative animate-float">
-                // Mudar o brilho neon do avatar para as cores da logo
                 <div class="absolute inset-0 bg-gradient-to-tr from-[#1D1C4C] via-dark-800 to-[#104E59] rounded-full blur-3xl opacity-40 animate-glow w-64 h-64 md:w-96 md:h-96 m-auto"></div>
                 
                 <div class="relative w-64 h-64 md:w-[400px] md:h-[400px] rounded-full p-1 bg-gradient-to-tr from-white/10 to-white/30 backdrop-blur-sm shadow-2xl">
@@ -132,22 +123,20 @@
             </div>
 
             <div class="order-1 md:order-2 text-center md:text-left">
-                // Mudar a disponibilidade para a cor da logo
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#104E59]/30 bg-[#104E59]/5 text-gray-400 text-xs font-semibold tracking-widest uppercase mb-6">
                     <span class="w-2 h-2 rounded-full bg-[#104E59] animate-pulse"></span> Disponível para Projetos
                 </div>
                 
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black text-white leading-tight mb-4 tracking-tight">
-                    Especialista em Marketing Digital <br class="hidden md:block"/> 
-                    <span class="text-gradient">& Performance</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-black text-white leading-tight mb-4 tracking-tight">
+                    Marketing Digital, <br class="hidden xl:block"/> 
+                    <span class="text-gradient">Tráfego Pago e Criação Digital</span>
                 </h1>
                 
                 <p class="text-base md:text-lg text-gray-400 mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">
-                    Profissional formado em Marketing com atuação em tráfego pago, design estratégico, produção de vídeos e desenvolvimento de landing pages em HTML, criando estruturas digitais completas para geração de leads e crescimento de negócios.
+                    Profissional formado em Marketing com atuação em gestão de tráfego, design, produção de vídeos e desenvolvimento de landing pages em HTML, criando estruturas digitais para geração de leads.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
-                    // Mudar o botão para a cor da logo
                     <button onclick="abrirModal()" class="w-full sm:w-auto bg-[#104E59] text-white font-bold uppercase tracking-wider px-8 py-4 rounded-full shadow-[0_0_20px_rgba(16,78,89,0.4)] hover:scale-105 transition-transform flex items-center justify-center gap-2">
                         Ver Projetos <i data-lucide="arrow-right" class="w-5 h-5"></i>
                     </button>
@@ -169,14 +158,12 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left divide-y md:divide-y-0 md:divide-x divide-white/10">
                 
                 <div class="md:pr-8 py-6 md:py-0">
-                    // Mudar os ícones para a cor da logo
                     <div class="text-[#104E59] mb-4 flex justify-center md:justify-start"><i data-lucide="users" class="w-10 h-10"></i></div>
                     <h3 class="text-3xl lg:text-4xl font-display font-black text-white mb-2">+200 Leads Gerados</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">Campanhas de tráfego pago focadas em captação de clientes qualificados.</p>
                 </div>
                 
                 <div class="md:px-8 py-6 md:py-0">
-                    // Mudar os ícones para a cor da logo
                     <div class="text-[#1D1C4C] mb-4 flex justify-center md:justify-start"><i data-lucide="bar-chart-2" class="w-10 h-10"></i></div>
                     <h3 class="text-3xl lg:text-4xl font-display font-black text-white mb-2">Meta Ads</h3>
                     <h4 class="text-sm font-bold uppercase tracking-widest text-[#1D1C4C] mb-2">Campanhas Estruturadas</h4>
@@ -184,7 +171,6 @@
                 </div>
                 
                 <div class="md:pl-8 py-6 md:py-0">
-                    // Mudar os ícones para a cor da logo
                     <div class="text-white mb-4 flex justify-center md:justify-start"><i data-lucide="layout-template" class="w-10 h-10"></i></div>
                     <h3 class="text-3xl lg:text-4xl font-display font-black text-white mb-2">HTML / CSS</h3>
                     <h4 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-2">Landing Pages</h4>
@@ -200,13 +186,11 @@
 
         <div class="max-w-6xl mx-auto px-6 relative z-10">
             <div class="text-center mb-16">
-                // Mudar a cor para a logo
                 <span class="text-[#104E59] font-bold text-xs uppercase tracking-widest mb-2 block">Soluções</span>
                 <h2 class="text-3xl md:text-5xl font-display font-black text-white">Minhas <span class="text-gradient">Entregas</span></h2>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                // Mudar as bordas de acento para a cor da logo
                 <div class="glass p-8 rounded-3xl border-t-2 border-t-[#104E59] hover:-translate-y-2 transition-transform">
                     <div class="bg-[#104E59]/10 w-14 h-14 rounded-full flex items-center justify-center mb-6">
                         <i data-lucide="trending-up" class="w-6 h-6 text-[#104E59]"></i>
@@ -215,7 +199,6 @@
                     <p class="text-gray-400 text-sm leading-relaxed">Planejamento, criação e otimização de campanhas no Meta Ads e outras plataformas, focadas em geração de leads, crescimento de negócios e análise constante de resultados.</p>
                 </div>
                 
-                // Mudar as bordas de acento para a cor da logo
                 <div class="glass p-8 rounded-3xl border-t-2 border-t-[#1D1C4C] hover:-translate-y-2 transition-transform md:-translate-y-4">
                     <div class="bg-[#1D1C4C]/10 w-14 h-14 rounded-full flex items-center justify-center mb-6">
                         <i data-lucide="image" class="w-6 h-6 text-[#1D1C4C]"></i>
@@ -224,7 +207,6 @@
                     <p class="text-gray-400 text-sm leading-relaxed">Criação de peças visuais, criativos para campanhas e produção de vídeos estratégicos alinhados com a identidade da marca e objetivos de marketing.</p>
                 </div>
                 
-                // Mudar as bordas de acento para a cor da logo
                 <div class="glass p-8 rounded-3xl border-t-2 border-t-[#104E59] hover:-translate-y-2 transition-transform">
                     <div class="bg-[#104E59]/10 w-14 h-14 rounded-full flex items-center justify-center mb-6">
                         <i data-lucide="mouse-pointer-click" class="w-6 h-6 text-[#104E59]"></i>
@@ -239,35 +221,30 @@
     <section class="py-24 bg-dark-800 border-t border-white/5 relative">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-16">
-                // Mudar a cor para a logo
                 <span class="text-[#1D1C4C] font-bold text-xs uppercase tracking-widest mb-2 block">Metodologia</span>
                 <h2 class="text-3xl md:text-5xl font-display font-black text-white">Como funciona meu <span class="text-gradient">processo</span></h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-4">
                 
-                // Mudar as bordas e ícones para a cor da logo
                 <div class="relative p-6 glass rounded-3xl border border-white/5 hover:border-[#104E59]/50 transition-colors group">
                     <div class="text-6xl font-display font-black text-white/5 absolute right-4 top-4 group-hover:text-white/10 transition-colors">1</div>
                     <h3 class="text-xl font-bold text-white mb-3 relative z-10 flex items-center gap-2"><i data-lucide="search" class="w-5 h-5 text-[#104E59]"></i> Diagnóstico</h3>
                     <p class="text-gray-400 text-sm relative z-10">Análise do negócio e definição da estratégia digital.</p>
                 </div>
 
-                // Mudar as bordas e ícones para a cor da logo
                 <div class="relative p-6 glass rounded-3xl border border-white/5 hover:border-[#1D1C4C]/50 transition-colors group">
                     <div class="text-6xl font-display font-black text-white/5 absolute right-4 top-4 group-hover:text-white/10 transition-colors">2</div>
                     <h3 class="text-xl font-bold text-white mb-3 relative z-10 flex items-center gap-2"><i data-lucide="map" class="w-5 h-5 text-[#1D1C4C]"></i> Planejamento</h3>
                     <p class="text-gray-400 text-sm relative z-10">Estruturação das campanhas, criativos e páginas necessárias.</p>
                 </div>
 
-                // Mudar as bordas e ícones para a cor da logo
                 <div class="relative p-6 glass rounded-3xl border border-white/5 hover:border-[#1D1C4C]/50 transition-colors group">
                     <div class="text-6xl font-display font-black text-white/5 absolute right-4 top-4 group-hover:text-white/10 transition-colors">3</div>
                     <h3 class="text-xl font-bold text-white mb-3 relative z-10 flex items-center gap-2"><i data-lucide="play" class="w-5 h-5 text-[#1D1C4C]"></i> Execução</h3>
                     <p class="text-gray-400 text-sm relative z-10">Implementação das campanhas, criação dos materiais e desenvolvimento das landing pages.</p>
                 </div>
 
-                // Mudar as bordas e ícones para a cor da logo
                 <div class="relative p-6 glass rounded-3xl border border-white/5 hover:border-[#104E59]/50 transition-colors group">
                     <div class="text-6xl font-display font-black text-white/5 absolute right-4 top-4 group-hover:text-white/10 transition-colors">4</div>
                     <h3 class="text-xl font-bold text-white mb-3 relative z-10 flex items-center gap-2"><i data-lucide="refresh-cw" class="w-5 h-5 text-[#104E59]"></i> Otimização</h3>
@@ -314,7 +291,6 @@
             </div>
 
             <div class="mt-16 text-center">
-                // Mudar o botão para a cor da logo
                 <button onclick="abrirModal()" class="inline-flex items-center gap-3 bg-white text-dark-900 font-black uppercase tracking-wider px-10 py-5 rounded-full shadow-[0_10px_40px_rgba(16,78,89,0.2)] hover:scale-105 transition-transform">
                     Ver Galeria Completa <i data-lucide="layout-grid" class="w-5 h-5"></i>
                 </button>
@@ -334,14 +310,12 @@
                 <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-[#104E59] hover:text-[#104E59] cursor-default transition-colors">Design de Criativos</span>
                 <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-[#104E59] hover:text-[#104E59] cursor-default transition-colors">Edição de Vídeo</span>
                 <span class="px-5 py-2 glass rounded-full text-white font-medium border border-white/10 text-sm hover:border-[#104E59] hover:text-[#104E59] cursor-default transition-colors">Análise de Métricas de Campanha</span>
-                // Botão de IA com a cor da logo
                 <span class="px-5 py-2 border border-[#104E59]/50 bg-[#104E59]/10 rounded-full text-[#104E59] font-bold text-sm cursor-default hover:bg-[#104E59] hover:text-white transition-colors">Inteligência Artificial aplicada ao Marketing</span>
             </div>
         </div>
     </section>
 
     <footer id="contato" class="bg-dark-900 border-t border-[#104E59]/30 pt-20 pb-10 relative overflow-hidden">
-        // Mudar o brilho neon do CTA para as cores da logo
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom,_rgba(16,78,89,0.1),_transparent_50%)]"></div>
         
         <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
@@ -351,7 +325,6 @@
             </p>
             
             <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
-                // Botão WhatsApp com a cor da logo
                 <a href="https://wa.me/5544991610305" target="_blank" class="bg-[#25D366] text-white font-bold uppercase tracking-widest px-8 py-4 rounded-full hover:bg-[#1ebd59] transition-transform hover:scale-105 flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(37,211,102,0.3)]">
                     <i data-lucide="message-circle" class="w-5 h-5"></i> Falar no WhatsApp
                 </a>
@@ -377,7 +350,6 @@
             
             <div class="p-5 flex justify-between items-center border-b border-white/5 bg-dark-800 shrink-0">
                 <div>
-                    // Mudar a cor para a logo
                     <span class="text-[#104E59] font-bold text-xs uppercase tracking-widest">Galeria Completa</span>
                     <h3 class="text-white font-display font-black text-xl">Projetos de Marketing, Design e Performance</h3>
                 </div>
@@ -398,12 +370,10 @@
                         
                         <div class="space-y-4 mb-6">
                             <div>
-                                // Mudar o ícone para a cor da logo
                                 <h5 class="text-[#104E59] font-black text-xs uppercase mb-1 flex items-center gap-1"><i data-lucide="target" class="w-3 h-3"></i> Objetivo</h5>
                                 <p class="text-gray-300 text-sm">Criação de criativo em vídeo para campanha de captação de leads e aumento de agendamentos.</p>
                             </div>
                             <div>
-                                // Mudar o ícone para a cor da logo
                                 <h5 class="text-[#1D1C4C] font-black text-xs uppercase mb-1 flex items-center gap-1"><i data-lucide="check-square" class="w-3 h-3"></i> O que foi feito</h5>
                                 <ul class="text-gray-300 text-sm list-disc pl-4 marker:text-[#1D1C4C] space-y-1">
                                     <li>Criação de vídeo dinâmico</li>
@@ -412,13 +382,11 @@
                                 </ul>
                             </div>
                             <div>
-                                // Mudar o ícone para a cor da logo
                                 <h5 class="text-gray-500 font-black text-xs uppercase mb-1 flex items-center gap-1"><i data-lucide="trending-up" class="w-3 h-3"></i> Resultado</h5>
                                 <p class="text-gray-300 text-sm">Melhoria na performance da campanha, com redução no custo por lead (CPL) e aumento no número de agendamentos reais.</p>
                             </div>
                         </div>
 
-                        // Mudar as tags para a cor da logo
                         <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
                             <span class="text-[10px] uppercase font-bold px-2 py-1 bg-[#104E59]/10 border border-[#104E59]/20 rounded text-[#104E59]">Tráfego Pago</span>
                             <span class="text-[10px] uppercase font-bold px-2 py-1 bg-[#1D1C4C]/10 border border-[#1D1C4C]/20 rounded text-[#1D1C4C]">Vídeo</span>
@@ -453,28 +421,51 @@
                             </div>
                         </div>
 
-                        // Mudar as tags para a cor da logo
                         <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
                             <span class="text-[10px] uppercase font-bold px-2 py-1 bg-[#104E59]/10 border border-[#104E59]/20 rounded text-[#104E59]">Design</span>
                             <span class="text-[10px] uppercase font-bold px-2 py-1 bg-white/10 border border-white/20 rounded text-gray-300">Marketing Digital</span>
                         </div>
                     </div>
                 </div>
-
+                
+                <div class="flex-none w-[85vw] md:w-[400px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col h-full max-h-[800px] select-none">
+                    <div class="h-64 relative bg-black shrink-0"><video src="img/portifolio-video2.mp4" class="absolute inset-0 w-full h-full object-cover" controls playsinline></video></div>
+                    <div class="p-6 overflow-y-auto custom-scroll flex-1 flex flex-col">
+                        <h4 class="text-white font-bold text-xl mb-1">Vídeo Institucional</h4>
+                        <div class="space-y-4 mb-6 mt-4">
+                            <div><h5 class="text-[#104E59] font-black text-xs uppercase mb-1">Objetivo</h5><p class="text-gray-300 text-sm">Aumentar a autoridade da marca.</p></div>
+                            <div><h5 class="text-[#1D1C4C] font-black text-xs uppercase mb-1">O que foi feito</h5><ul class="text-gray-300 text-sm list-disc pl-4 marker:text-[#1D1C4C] space-y-1"><li>Roteiro, captação e edição</li></ul></div>
+                            <div><h5 class="text-gray-500 font-black text-xs uppercase mb-1">Resultado</h5><p class="text-gray-300 text-sm">Melhoria no engajamento nas redes sociais.</p></div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5"><span class="text-[10px] uppercase font-bold px-2 py-1 bg-[#1D1C4C]/10 border border-[#1D1C4C]/20 rounded text-[#1D1C4C]">Vídeo</span></div>
+                    </div>
                 </div>
+
+                <div class="flex-none w-[85vw] md:w-[400px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col h-full max-h-[800px] select-none">
+                    <div class="h-64 relative bg-dark-700 shrink-0"><img src="img/portifolio-img2.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none"></div>
+                    <div class="p-6 overflow-y-auto custom-scroll flex-1 flex flex-col">
+                        <h4 class="text-white font-bold text-xl mb-1">Criação de Landing Page</h4>
+                        <div class="space-y-4 mb-6 mt-4">
+                            <div><h5 class="text-[#104E59] font-black text-xs uppercase mb-1">Objetivo</h5><p class="text-gray-300 text-sm">Captação de leads em página de alta conversão.</p></div>
+                            <div><h5 class="text-[#1D1C4C] font-black text-xs uppercase mb-1">O que foi feito</h5><ul class="text-gray-300 text-sm list-disc pl-4 marker:text-[#1D1C4C] space-y-1"><li>Desenvolvimento de landing page em HTML</li><li>Design voltado a UX/UI</li></ul></div>
+                            <div><h5 class="text-gray-500 font-black text-xs uppercase mb-1">Resultado</h5><p class="text-gray-300 text-sm">Aumento direto na taxa de conversão.</p></div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5"><span class="text-[10px] uppercase font-bold px-2 py-1 bg-[#104E59]/10 border border-[#104E59]/20 rounded text-[#104E59]">Landing Page</span><span class="text-[10px] uppercase font-bold px-2 py-1 bg-white/10 border border-white/20 rounded text-gray-300">Design</span></div>
+                    </div>
+                </div>
+                
+            </div>
 
             <div class="p-4 bg-dark-800 border-t border-white/5 text-center flex items-center justify-between px-6 shrink-0">
                 <p class="text-gray-500 text-xs font-medium flex items-center gap-2">
                     <i data-lucide="mouse" class="w-4 h-4"></i> Clique e arraste para o lado
                 </p>
-                // Mudar a cor para a logo
                 <a href="#contato" onclick="fecharModal()" class="text-[#104E59] hover:text-white text-sm font-bold uppercase tracking-wider transition-colors">
                     Solicitar Orçamento
                 </a>
             </div>
         </div>
     </div>
-
 
     <script>
         lucide.createIcons();
