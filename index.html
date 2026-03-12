@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="pt-br" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -60,7 +60,6 @@
     </script>
 
     <style>
-        /* Esconde a scrollbar padrão mas mantém a funcionalidade */
         .scrollbar-hide::-webkit-scrollbar {
             display: none;
         }
@@ -189,7 +188,7 @@
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
                 <div class="rounded-3xl overflow-hidden shadow-2xl border border-[#104E59]/50 bg-dark-800 flex flex-col hover:border-neon-cyan/70 hover:shadow-[0_10px_40px_-10px_rgba(0,242,254,0.2)] transition-all duration-300 group">
-                    <div class="h-64 sm:h-80 relative bg-dark-700 shrink-0 overflow-hidden cursor-pointer group/img" onclick="abrirLightbox('img/print-onlineloterias.jpg')">
+                    <div class="h-64 sm:h-80 relative bg-dark-700 shrink-0 overflow-hidden cursor-pointer group/img" onclick="abrirLightboxImg('img/print-onlineloterias.jpg')">
                         <img src="img/print-onlineloterias.jpg" class="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" alt="Online Loterias">
                         <div class="absolute inset-0 bg-dark-900/60 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity duration-300">
                             <div class="bg-black/50 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 flex items-center gap-2">
@@ -232,7 +231,7 @@
                 </div>
 
                 <div class="rounded-3xl overflow-hidden shadow-2xl border border-[#104E59]/50 bg-dark-800 flex flex-col hover:border-neon-cyan/70 hover:shadow-[0_10px_40px_-10px_rgba(0,242,254,0.2)] transition-all duration-300 group">
-                    <div class="h-64 sm:h-80 relative bg-dark-700 shrink-0 overflow-hidden cursor-pointer group/img" onclick="abrirLightbox('img/print-joguenasorte.jpg')">
+                    <div class="h-64 sm:h-80 relative bg-dark-700 shrink-0 overflow-hidden cursor-pointer group/img" onclick="abrirLightboxImg('img/print-joguenasorte.jpg')">
                         <img src="img/print-joguenasorte.jpg" class="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" alt="Jogue na Sorte">
                         <div class="absolute inset-0 bg-dark-900/60 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity duration-300">
                             <div class="bg-black/50 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 flex items-center gap-2">
@@ -290,8 +289,13 @@
             <div id="carrossel-projetos" class="flex overflow-x-auto gap-6 px-6 md:px-[max(1.5rem,calc((100vw-80rem)/2))] pb-12 pt-4 snap-x snap-mandatory scrollbar-hide cursor-grab active:cursor-grabbing items-stretch" style="scroll-behavior: smooth;">
                 
                 <div class="flex-none w-[85vw] sm:w-[380px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col hover:border-neon-blue/50 hover:shadow-[0_0_30px_rgba(79,172,254,0.1)] transition-all duration-300 group">
-                    <div class="h-56 relative bg-black shrink-0">
-                        <video src="img/portifolio-video1.mp4" class="absolute inset-0 w-full h-full object-cover" controls playsinline preload="metadata"></video>
+                    <div class="h-56 relative bg-black shrink-0 overflow-hidden cursor-pointer group/vid" onclick="abrirLightboxVideo('img/portifolio-video1.mp4')">
+                        <video src="img/portifolio-video1.mp4" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+                        <div class="absolute inset-0 bg-dark-900/60 flex items-center justify-center opacity-0 group-hover/vid:opacity-100 transition-opacity duration-300">
+                            <div class="bg-black/50 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 flex items-center gap-2">
+                                <i data-lucide="play" class="w-6 h-6"></i> <span class="font-bold text-sm uppercase tracking-wider">Assistir</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="p-6 flex-1 flex flex-col">
                         <h4 class="text-white font-bold text-xl mb-1">Campanha de Alta Conversão</h4>
@@ -319,7 +323,7 @@
                 </div>
 
                 <div class="flex-none w-[85vw] sm:w-[380px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col hover:border-neon-blue/50 hover:shadow-[0_0_30px_rgba(79,172,254,0.1)] transition-all duration-300 group">
-                    <div class="h-56 relative bg-dark-700 shrink-0 overflow-hidden cursor-pointer group/img" onclick="abrirLightbox('img/portifolio-img1.jpg')">
+                    <div class="h-56 relative bg-dark-700 shrink-0 overflow-hidden cursor-pointer group/img" onclick="abrirLightboxImg('img/portifolio-img1.jpg')">
                         <img src="img/portifolio-img1.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-dark-900/60 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity duration-300">
                             <div class="bg-black/50 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 flex items-center gap-2">
@@ -353,7 +357,7 @@
                 </div>
 
                 <div class="flex-none w-[85vw] sm:w-[380px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col hover:border-neon-blue/50 hover:shadow-[0_0_30px_rgba(79,172,254,0.1)] transition-all duration-300 group">
-                    <div class="h-56 relative bg-dark-700 shrink-0 overflow-hidden cursor-pointer group/img" onclick="abrirLightbox('img/portifolio-img2.jpg')">
+                    <div class="h-56 relative bg-dark-700 shrink-0 overflow-hidden cursor-pointer group/img" onclick="abrirLightboxImg('img/portifolio-img2.jpg')">
                         <img src="img/portifolio-img2.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-dark-900/60 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity duration-300">
                             <div class="bg-black/50 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 flex items-center gap-2">
@@ -387,8 +391,13 @@
                 </div>
                 
                 <div class="flex-none w-[85vw] sm:w-[380px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col hover:border-neon-blue/50 hover:shadow-[0_0_30px_rgba(79,172,254,0.1)] transition-all duration-300 group">
-                    <div class="h-56 relative bg-black shrink-0">
-                        <video src="img/portifolio-video4.mp4" class="absolute inset-0 w-full h-full object-cover" controls playsinline preload="metadata"></video>
+                    <div class="h-56 relative bg-black shrink-0 overflow-hidden cursor-pointer group/vid" onclick="abrirLightboxVideo('img/portifolio-video4.mp4')">
+                        <video src="img/portifolio-video4.mp4" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+                        <div class="absolute inset-0 bg-dark-900/60 flex items-center justify-center opacity-0 group-hover/vid:opacity-100 transition-opacity duration-300">
+                            <div class="bg-black/50 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 flex items-center gap-2">
+                                <i data-lucide="play" class="w-6 h-6"></i> <span class="font-bold text-sm uppercase tracking-wider">Assistir</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="p-6 flex-1 flex flex-col">
                         <h4 class="text-white font-bold text-xl mb-1">Edição Dinâmica para Reels</h4>
@@ -416,7 +425,7 @@
                 </div>
 
                 <div class="flex-none w-[85vw] sm:w-[380px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col hover:border-neon-blue/50 hover:shadow-[0_0_30px_rgba(79,172,254,0.1)] transition-all duration-300 group">
-                    <div class="h-56 relative bg-dark-700 shrink-0 overflow-hidden cursor-pointer group/img" onclick="abrirLightbox('img/portifolio-img7.jpeg')">
+                    <div class="h-56 relative bg-dark-700 shrink-0 overflow-hidden cursor-pointer group/img" onclick="abrirLightboxImg('img/portifolio-img7.jpeg')">
                         <img src="img/portifolio-img7.jpeg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-dark-900/60 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity duration-300">
                             <div class="bg-black/50 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 flex items-center gap-2">
@@ -450,8 +459,13 @@
                 </div>
 
                 <div class="flex-none w-[85vw] sm:w-[380px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col hover:border-neon-blue/50 hover:shadow-[0_0_30px_rgba(79,172,254,0.1)] transition-all duration-300 group">
-                    <div class="h-56 relative bg-black shrink-0">
-                        <video src="img/portifolio-video5.mp4" class="absolute inset-0 w-full h-full object-cover" controls playsinline preload="metadata"></video>
+                    <div class="h-56 relative bg-black shrink-0 overflow-hidden cursor-pointer group/vid" onclick="abrirLightboxVideo('img/portifolio-video5.mp4')">
+                        <video src="img/portifolio-video5.mp4" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+                        <div class="absolute inset-0 bg-dark-900/60 flex items-center justify-center opacity-0 group-hover/vid:opacity-100 transition-opacity duration-300">
+                            <div class="bg-black/50 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 flex items-center gap-2">
+                                <i data-lucide="play" class="w-6 h-6"></i> <span class="font-bold text-sm uppercase tracking-wider">Assistir</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="p-6 flex-1 flex flex-col">
                         <h4 class="text-white font-bold text-xl mb-1">Vídeo Institucional / VSL</h4>
@@ -479,7 +493,7 @@
                 </div>
                 
                 <div class="flex-none w-[85vw] sm:w-[380px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col hover:border-neon-blue/50 hover:shadow-[0_0_30px_rgba(79,172,254,0.1)] transition-all duration-300 group">
-                    <div class="h-56 relative bg-dark-700 shrink-0 overflow-hidden cursor-pointer group/img" onclick="abrirLightbox('img/portifolio-img8.jpg')">
+                    <div class="h-56 relative bg-dark-700 shrink-0 overflow-hidden cursor-pointer group/img" onclick="abrirLightboxImg('img/portifolio-img8.jpg')">
                         <img src="img/portifolio-img8.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-dark-900/60 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity duration-300">
                             <div class="bg-black/50 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 flex items-center gap-2">
@@ -513,7 +527,7 @@
                 </div>
                 
                 <div class="flex-none w-[85vw] sm:w-[380px] snap-center rounded-2xl overflow-hidden shadow-lg border border-white/10 bg-dark-800 flex flex-col hover:border-neon-blue/50 hover:shadow-[0_0_30px_rgba(79,172,254,0.1)] transition-all duration-300 group">
-                    <div class="h-56 relative bg-dark-700 shrink-0 overflow-hidden cursor-pointer group/img" onclick="abrirLightbox('img/portifolio-img9.jpg')">
+                    <div class="h-56 relative bg-dark-700 shrink-0 overflow-hidden cursor-pointer group/img" onclick="abrirLightboxImg('img/portifolio-img9.jpg')">
                         <img src="img/portifolio-img9.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-dark-900/60 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity duration-300">
                             <div class="bg-black/50 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 flex items-center gap-2">
@@ -597,32 +611,75 @@
         </div>
     </footer>
 
-    <div id="lightbox" class="fixed inset-0 z-[100000] bg-black/95 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300" onclick="fecharLightbox()">
-        <button onclick="fecharLightbox()" class="absolute top-6 right-6 text-white hover:text-neon-cyan transition-colors bg-black/50 p-2 rounded-full border border-white/10">
+    <div id="lightbox" class="fixed inset-0 z-[100000] bg-black/95 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300" onclick="fecharLightbox(event)">
+        <button onclick="fecharLightbox(event)" class="absolute top-6 right-6 text-white hover:text-neon-cyan transition-colors bg-black/50 p-2 rounded-full border border-white/10 z-50">
             <i data-lucide="x" class="w-6 h-6"></i>
         </button>
-        <img id="lightbox-img" src="" class="max-w-full max-h-[90vh] object-contain p-4 select-none drop-shadow-[0_0_30px_rgba(0,0,0,0.8)]" alt="Visualização Completa">
+        
+        <img id="lightbox-img" src="" class="max-w-full max-h-[90vh] object-contain p-4 hidden select-none drop-shadow-[0_0_30px_rgba(0,0,0,0.8)]" alt="Visualização Completa">
+        
+        <video id="lightbox-vid" src="" class="max-w-full max-h-[90vh] object-contain p-4 hidden shadow-[0_0_30px_rgba(0,0,0,0.8)]" controls playsinline></video>
     </div>
 
     <script>
         lucide.createIcons();
         
-        /* SISTEMA DO LIGHTBOX PARA IMAGENS */
-        let isDragging = false; // Variável para diferenciar arraste de clique no carrossel
+        /* SISTEMA DO LIGHTBOX MISTO */
+        let isDragging = false; 
 
-        function abrirLightbox(imgSrc) {
-            if (isDragging) return; // Se o usuário estava arrastando, não abre a imagem
+        function abrirLightboxImg(imgSrc) {
+            if (isDragging) return; 
             const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            lightboxImg.src = imgSrc;
+            const imgEl = document.getElementById('lightbox-img');
+            const vidEl = document.getElementById('lightbox-vid');
+            
+            // Pausa o vídeo caso estivesse rodando
+            vidEl.pause();
+            vidEl.classList.add('hidden');
+            
+            // Configura a imagem
+            imgEl.src = imgSrc;
+            imgEl.classList.remove('hidden');
+            
             lightbox.classList.remove('opacity-0', 'pointer-events-none');
         }
 
-        function fecharLightbox() {
+        function abrirLightboxVideo(vidSrc) {
+            if (isDragging) return; 
+            const lightbox = document.getElementById('lightbox');
+            const imgEl = document.getElementById('lightbox-img');
+            const vidEl = document.getElementById('lightbox-vid');
+            
+            // Esconde a imagem
+            imgEl.classList.add('hidden');
+            
+            // Configura o vídeo
+            vidEl.src = vidSrc;
+            vidEl.classList.remove('hidden');
+            
+            lightbox.classList.remove('opacity-0', 'pointer-events-none');
+            vidEl.play(); // Inicia o vídeo automaticamente
+        }
+
+        function fecharLightbox(event) {
+            // Se o usuário clicar DENTRO do vídeo, não fecha o lightbox (para ele poder usar os controles)
+            if(event && event.target.tagName === 'VIDEO') return;
+
             const lightbox = document.getElementById('lightbox');
             lightbox.classList.add('opacity-0', 'pointer-events-none');
-            // Limpa o src da imagem depois que a animação de fechar termina
-            setTimeout(() => { document.getElementById('lightbox-img').src = ''; }, 300);
+            
+            // Pausa e limpa os arquivos depois que a animação de fechar termina
+            setTimeout(() => { 
+                const imgEl = document.getElementById('lightbox-img');
+                const vidEl = document.getElementById('lightbox-vid');
+                
+                vidEl.pause();
+                vidEl.src = '';
+                imgEl.src = '';
+                
+                imgEl.classList.add('hidden');
+                vidEl.classList.add('hidden');
+            }, 300);
         }
 
         /* SISTEMA DE ARRASTAR DO CARROSSEL */
@@ -634,7 +691,7 @@
 
         slider.addEventListener('mousedown', (e) => {
             isDown = true; 
-            isDragging = false; // Reseta o status de arraste
+            isDragging = false; 
             startMoveTime = Date.now();
             slider.style.cursor = 'grabbing';
             startX = e.pageX - slider.offsetLeft; 
@@ -649,7 +706,7 @@
         slider.addEventListener('mouseup', (e) => { 
             isDown = false; 
             slider.style.cursor = 'grab'; 
-            // Se soltou muito rápido ou moveu muito pouco, considera que foi um clique
+            // Se foi um clique rápido e sem mover muito, não é arraste
             if (Date.now() - startMoveTime < 150) {
                 isDragging = false;
             }
@@ -658,9 +715,9 @@
         slider.addEventListener('mousemove', (e) => {
             if (!isDown) return; 
             e.preventDefault();
-            isDragging = true; // Marca que está acontecendo um arraste
+            isDragging = true; // Marca que está arrastando
             const x = e.pageX - slider.offsetLeft; 
-            const walk = (x - startX) * 2; // Velocidade da rolagem
+            const walk = (x - startX) * 2; 
             slider.scrollLeft = scrollLeft - walk;
         });
     </script>
